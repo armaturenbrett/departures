@@ -1,0 +1,12 @@
+departures:
+  access-id: 'registration-name-1234-abcd-1234abcd1234'
+  api-language: 'de'
+  boards:
+    - direction: 'S Treptower Park' # station name as you know it / as you type it in the BVG app e.g. 'S Treptower Park'
+      max_wait_time: 7 # time you accept to wait at the station (for background color calculation)
+      products: 8 # bitmask of:  0 = SBahn, 1 = UBahn, 2 = Tram, 3 = Bus
+      start: 'Bouchestr' # station name as you know it / as you type it in the BVG app e.g. 'Bouchestr'
+      title: 'Treptower Park' # widget display name
+      upcoming_connections: 3 # amount of upcoming connections the widget displays
+      walk_time: 5 # minutes you need to walk to the start station (for background color calculation)
+      widget_id: 'bouchestr-to-treptowerpark' # widget DOM id

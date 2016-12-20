@@ -1,0 +1,31 @@
+.departures id="#{widget_id}" data-preload="#{WidgetDatum.find('departures').data.to_json}"
+  .large-number
+    | {{minutesUntilNextLeave}}
+    span.sub-information-1
+      = t('departures.minutes')
+
+  h2
+    | {{name}}
+
+  ul.departure-list
+    | {{#departures}}
+    li.departure-item
+      .departing-time
+        strong
+          | {{minutesUntilDeparture}}
+        span.sub-information-2
+          = "#{t('departures.minutes')},"
+        strong
+          | {{departureTime}}
+        span.sub-information-2
+          = " #{t('departures.o-clock')}:"
+
+      .vehicle
+        strong
+          | {{line}}
+        span.sub-information-2
+          = " #{t('departures.to')}"
+
+      .destination
+        | {{destination}}
+    | {{/departures}}

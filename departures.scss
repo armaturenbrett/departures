@@ -1,0 +1,64 @@
+.departures {
+  background-color: #868686;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .large-number {
+    color: #FFF;
+    font-size: 10vw;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: -1.5vw;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 3vw;
+    position: absolute;
+    text-align: center;
+    top: 5.6vw;
+    width: 100%;
+  }
+
+  .departure-list {
+    padding-left: 0;
+    position: absolute;
+    top: 10vw;
+  }
+
+  li {
+    list-style: none;
+    font-size: 1.1vw;
+    margin-bottom: 0.5vw;
+
+    &:nth-child(2) {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:nth-child(3) {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    strong {
+      margin: 0 0.3vw;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .destination {
+      width: 100%;
+    }
+  }
+
+  .sub-information-1 {
+    opacity: .35;
+  }
+
+  .sub-information-2 {
+    opacity: .6;
+  }
+}

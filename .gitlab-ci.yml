@@ -1,0 +1,11 @@
+image: 'ruby:2.3.3'
+
+stages:
+  - mirror
+
+mirror:
+  stage: mirror
+  script:
+    - ./.mirror
+  only:
+    - master
